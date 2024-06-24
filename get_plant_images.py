@@ -16,7 +16,7 @@ def get_token():
         headers = {'content-type': 'application/json'}
         
         #Log in information
-        user = {'user': {'email': "jiroach@ucdavis.edu", 'password': "ebs170FB"}}
+        user = {'user': {'email': "email", 'password': "password"}}
         response = requests.post('https://my.farmbot.io/api/tokens',
                                  headers=headers, json=user)
         token = response.json()['token']['encoded']
